@@ -3,210 +3,679 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Youtube Landing Page</title>
+    <link rel="shortcut icon" href="/logo.avif" type="image/x-icon">
     <style>
+        body{
+            background-color: rgba(0, 0, 0, 0.473);
+            
+        }
+       
+        *{
+            margin: 0;
+            padding: 0;
+        }
         .container{
-            width: 100%;
-            height: 4000px;
-            /* border: 1px solid black; */
+          
+            width: 98vw;
+            height: 3500px;
+            /* border: 1px solid rgb(180, 23, 23); */
+            margin: 30px auto;
             display: flex;
             flex-wrap: wrap;
-            
-            justify-content: center;
+            justify-content: space-around;
         }
-        .box1{
-            margin: 5px 5px;
-            width: 24%;
-            height:calc(95%/8);
-            background-color: rgb(172, 100, 100);
+        .small{
+            margin: 10px 0;
+            width: 30%;
+            height:425px ;
+            border-radius: 15px;
+            border-bottom-right-radius: 80px;
+            border: 1px solid orange;
+            background-color: antiquewhite;
+            /* border-top-left-radius: 80px; */
         }
-        .boxa{
+        .small:hover{
+            /* transform: scaleY(1.1); */
+            transition: 0.5s;
+            box-shadow: 10px 10px 10px orange;
+        }
+        .mini{
             width: 100%;
             height: 70%;
-            background-color: wheat;
+            /* border: 1px solid blue; */
+           
+           
+        }
+        
+        .text{
+            display: flex;
+        }
+        .text span{
+            color: orangered;
+            font-weight: bolder;
+            font-size: 15px;
+        }
+        .text img{
+            border-radius: 20px;
+          
+            padding: 5px 5px;
+        }
+        .text p{
+            padding: 10px 5px;
+        }
+        .btn{
+            margin: 0px 15px;
+            padding: 10px 15px;
+            border-radius: 15px;
+            border-bottom-right-radius: 30px;
+            
+        }
+        .btn:hover{
+            transform: scaleX(1.1);
+            transition: 0.5s;
+            background-color: black;
+            color: white;
+            box-shadow: 5px 5px 10px black;
+        }
+
+        .m1{
+            background-image:url(/youtube1.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            border-radius: 15px;
+            /* border-bottom-right-radius: 60px;
+            border-bottom-left-radius: 60px; */
+          
+        }
+        .m:hover{
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+        .m2{
+            background-image:url(/youtube2.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            border-radius: 15px;
+          
+        }
+        .m3{
+            background-image:url(/3.webp);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            border-radius: 15px;
+          
+        }
+        .m4{
+            background-image:url(/youtube4.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            border-radius: 15px;
+          
+        }
+        .m5{
+            background-image:url(/youtube5.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            border-radius: 15px;
+          
+        }
+        .m6{
+            background-image:url(/youtube6.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            border-radius: 15px;
+          
+        }
+        .m7{
+            background-image:url(/youtube7.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            border-radius: 15px;
+          
+        }
+        .m8{
+            background-image:url(/youtube8.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            border-radius: 15px;
+          
+        }
+        .m9{
+            background-image:url(/youtube9.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            border-radius: 15px;
+          
+        }
+        .m10{
+            background-image:url(/youtube10.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            border-radius: 15px;
+          
+        }
+        .m11{
+            background-image:url(/youtube11.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            border-radius: 15px;
+          
+        }
+        .m12{
+            background-image:url(/youtube12.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            border-radius: 15px;
+          
+        }
+        .m13{
+            background-image:url(/youtube13.jpg_large);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            border-radius: 15px;
+          
+        }
+        .m14{
+            background-image:url(/youtube14a.avif);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            border-radius: 15px;
+          
+        }
+        .m15{
+            background-image:url(/youtube15.jpeg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            border-radius: 15px;
+          
+        }
+        .m16{
+            background-image:url(/youtube16.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            border-radius: 15px;
+          
+        }
+        .m17{
+            background-image:url(/17.webp);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            border-radius: 15px;
+          
+        }
+        .m18{
+            background-image:url(/youtube18.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            border-radius: 15px;
+          
+        }
+        .m19{
+            background-image:url(/youtube19.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            border-radius: 15px;
+          
+        }
+        .m20{
+            background-image:url(/youtube20.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            border-radius: 15px;
+          
+        }
+        .m21{
+            background-image:url(/youtube21.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            border-radius: 15px;
+          
         }
     </style>
 </head>
 <body>
-    <center>
     <div class="container">
-        <div class="box1">
+        <div class="small">
+            <div class="mini m1 m">
+               
+               
+
+            </div>
+            <div class="text">
+           <img src="/logo7.jpg" alt="" width="80px" height="80px">
+           <pre>
+            <p> <span>Technical Learning</span>
+ 363K subscriber
+            </p>
+           </pre>
            
+          
+            </div>
+            <button class="btn">subscrbe</button>
+           
+        </div>
+
+        <div class="small">
             
-            <div class="boxa">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ly36kn0ug4k?si=6XPFAidXDzBtZ2nS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="mini m2 m">
+                
+                
 
             </div>
-            
+            <div class="text">
+                <img src="/logo8.jpg" alt="" width="80px" height="80px">
+                <pre>
+                 <p> <span>Technical Learning</span>
+      363K subscriber
+                 </p>
+                </pre>
+                
+               
+                 </div>
+                 <button class="btn">subscrbe</button>
+
         </div>
 
-        <div class="box1">
-            <div class="boxa">
+        <div class="small">
+            <div class="mini m3 m">
                 
+
             </div>
+            <div class="text">
+                <img src="/logo9.jpg" alt="" width="80px" height="80px">
+                <pre>
+                 <p> <span>Technical Learning</span>
+      363K subscriber
+                 </p>
+                </pre>
+                
+               
+                 </div>
+                 <button class="btn">subscrbe</button>
+
         </div>
 
-        <div class="box1">
-            <div class="boxa">
-                
-            </div>
-        </div>
-
-        <div class="box1">
-            <div class="boxa">
-                
-            </div>
-        </div>
 
 
-        <div class="box1">
-            <div class="boxa">
+
+        <div class="small">
+            <div class="mini m4 m">
                 
+
             </div>
-        </div>
-        <div class="box1">
-            <div class="boxa">
+            <div class="text">
+                <img src="/logo10.jpg" alt="" width="80px" height="80px">
+                <pre>
+                 <p> <span>Technical Learning</span>
+      363K subscriber
+                 </p>
+                </pre>
                 
-            </div>
-        </div>
-        <div class="box1">
-            <div class="boxa">
-                
-            </div>
-        </div>
-        <div class="box1">
-            <div class="boxa">
-                
-            </div>
+               
+                 </div>
+                 <button class="btn">subscrbe</button>
+
         </div>
 
-        <div class="box1">
-            <div class="boxa">
+        <div class="small">
+            <div class="mini m5 m">
                 
+
             </div>
-        </div>
-        <div class="box1">
-            <div class="boxa">
+            <div class="text">
+                <img src="/logo11.jpg" alt="" width="80px" height="80px">
+                <pre>
+                 <p> <span>Technical Learning</span>
+      363K subscriber
+                 </p>
+                </pre>
                 
-            </div>
-        </div>
-        <div class="box1">
-            <div class="boxa">
-                
-            </div>
-        </div>
-        <div class="box1">
-            <div class="boxa">
-                
-            </div>
+               
+                 </div>
+                 <button class="btn">subscrbe</button>
+
         </div>
 
-        <div class="box1">
-            <div class="boxa">
+        <div class="small">
+            <div class="mini m6 m">
                 
+
             </div>
-        </div>
-        <div class="box1">
-            <div class="boxa">
+            <div class="text">
+                <img src="/logo12.jpg" alt="" width="80px" height="80px">
+                <pre>
+                 <p> <span>Technical Learning</span>
+      363K subscriber
+                 </p>
+                </pre>
                 
-            </div>
-        </div>
-        <div class="box1">
-            <div class="boxa">
-                
-            </div>
-        </div>
-        <div class="box1">
-            <div class="boxa">
-                
-            </div>
+               
+                 </div>
+                 <button class="btn">subscrbe</button>
+
         </div>
 
-        <div class="box1">
-            <div class="boxa">
+
+
+        <div class="small">
+            <div class="mini m7 m">
                 
+
             </div>
-        </div>
-        <div class="box1">
-            <div class="boxa">
+            <div class="text">
+                <img src="/logo13.webp" alt="" width="80px" height="80px">
+                <pre>
+                 <p> <span>Technical Learning</span>
+      363K subscriber
+                 </p>
+                </pre>
                 
-            </div>
-        </div>
-        <div class="box1">
-            <div class="boxa">
-                
-            </div>
-        </div>
-        <div class="box1">
-            <div class="boxa">
-                
-            </div>
+               
+                 </div>
+                 <button class="btn">subscrbe</button>
+
         </div>
 
-        <div class="box1">
-            <div class="boxa">
+        <div class="small">
+            <div class="mini m8 m">
                 
+
             </div>
-        </div>
-        <div class="box1">
-            <div class="boxa">
+            <div class="text">
+                <img src="/logo14.webp" alt="" width="80px" height="80px">
+                <pre>
+                 <p> <span>Technical Learning</span>
+      363K subscriber
+                 </p>
+                </pre>
                 
-            </div>
-        </div>
-        <div class="box1">
-            <div class="boxa">
-                
-            </div>
-        </div>
-        <div class="box1">
-            <div class="boxa">
-                
-            </div>
+               
+                 </div>
+                 <button class="btn">subscrbe</button>
+
         </div>
 
-        <div class="box1">
-            <div class="boxa">
+        <div class="small">
+            <div class="mini m9 m">
                 
+
             </div>
-        </div>
-        <div class="box1">
-            <div class="boxa">
+            <div class="text">
+                <img src="/logo15.webp" alt="" width="80px" height="80px">
+                <pre>
+                 <p> <span>Technical Learning</span>
+      363K subscriber
+                 </p>
+                </pre>
                 
-            </div>
-        </div>
-        <div class="box1">
-            <div class="boxa">
-                
-            </div>
-        </div>
-        <div class="box1">
-            <div class="boxa">
-                
-            </div>
+               
+                 </div>
+                 <button class="btn">subscrbe</button>
+
         </div>
 
-        <div class="box1">
-            <div class="boxa">
+
+
+        <div class="small">
+            <div class="mini m10 m">
                 
+
             </div>
+            <div class="text">
+                <img src="/logo16.webp" alt="" width="80px" height="80px">
+                <pre>
+                 <p> <span>Technical Learning</span>
+      363K subscriber
+                 </p>
+                </pre>
+                
+               
+                 </div>
+                 <button class="btn">subscrbe</button>
+
         </div>
-        <div class="box1">
-            <div class="boxa">
+
+        <div class="small">
+            <div class="mini m11 m">
                 
+
             </div>
+            <div class="text">
+                <img src="/logo17.webp" alt="" width="80px" height="80px">
+                <pre>
+                 <p> <span>Technical Learning</span>
+      363K subscriber
+                 </p>
+                </pre>
+                
+               
+                 </div>
+                 <button class="btn">subscrbe</button>
+
         </div>
-        <div class="box1">
-            <div class="boxa">
+
+        <div class="small">
+            <div class="mini m12 m">
                 
+
             </div>
+            <div class="text">
+                <img src="/logo19.webp" alt="" width="80px" height="80px">
+                <pre>
+                 <p> <span>Technical Learning</span>
+      363K subscriber
+                 </p>
+                </pre>
+                
+               
+                 </div>
+                 <button class="btn">subscrbe</button>
+
         </div>
-        <div class="box1">
-            <div class="boxa">
+
+
+        <div class="small">
+            <div class="mini m13 m">
                 
+
             </div>
+            <div class="text">
+                <img src="/logo20.webp" alt="" width="80px" height="80px">
+                <pre>
+                 <p> <span>Technical Learning</span>
+      363K subscriber
+                 </p>
+                </pre>
+                
+               
+                 </div>
+                 <button class="btn">subscrbe</button>
+
+        </div>
+
+        <div class="small">
+            <div class="mini m14 m">
+                
+
+            </div>
+            <div class="text">
+                <img src="/logo21.webp" alt="" width="80px" height="80px">
+                <pre>
+                 <p> <span>Technical Learning</span>
+      363K subscriber
+                 </p>
+                </pre>
+                
+               
+                 </div>
+                 <button class="btn">subscrbe</button>
+
+        </div>
+
+        <div class="small">
+            <div class="mini m15 m">
+                
+
+            </div>
+            <div class="text">
+                <img src="/logo22.webp" alt="" width="80px" height="80px">
+                <pre>
+                 <p> <span>Technical Learning</span>
+      363K subscriber
+                 </p>
+                </pre>
+                
+               
+                 </div>
+                 <button class="btn">subscrbe</button>
+
+        </div>
+
+
+        <div class="small">
+            <div class="mini m16 m">
+                
+
+            </div>
+            <div class="text">
+                <img src="/logo23.webp" alt="" width="80px" height="80px">
+                <pre>
+                 <p> <span>Technical Learning</span>
+      363K subscriber
+                 </p>
+                </pre>
+                
+               
+                 </div>
+                 <button class="btn">subscrbe</button>
+
+        </div>
+
+        <div class="small">
+            <div class="mini m17 m">
+                
+
+            </div>
+            <div class="text">
+                <img src="/logo24.webp" alt="" width="80px" height="80px">
+                <pre>
+                 <p> <span>Technical Learning</span>
+      363K subscriber
+                 </p>
+                </pre>
+                
+               
+                 </div>
+                 <button class="btn">subscrbe</button>
+
+        </div>
+
+        <div class="small">
+            <div class="mini m18 m">
+                
+
+            </div>
+            <div class="text">
+                <img src="/logo25.webp" alt="" width="80px" height="80px">
+                <pre>
+                 <p> <span>Technical Learning</span>
+      363K subscriber
+                 </p>
+                </pre>
+                
+               
+                 </div>
+                 <button class="btn">subscrbe</button>
+
+        </div>
+
+
+
+        <div class="small">
+            <div class="mini m19 m">
+                
+
+            </div>
+            <div class="text">
+                <img src="/logo26.webp" alt="" width="80px" height="80px">
+                <pre>
+                 <p> <span>Technical Learning</span>
+      363K subscriber
+                 </p>
+                </pre>
+                
+               
+                 </div>
+                 <button class="btn">subscrbe</button>
+
+        </div>
+
+        <div class="small">
+            <div class="mini m20 m">
+                
+
+            </div>
+            <div class="text">
+                <img src="/logo27.jpg" alt="" width="80px" height="80px">
+                <pre>
+                 <p> <span>Technical Learning</span>
+      363K subscriber
+                 </p>
+                </pre>
+                
+               
+                 </div>
+                 <button class="btn">subscrbe</button>
+
+        </div>
+
+        <div class="small">
+            <div class="mini m21 m">
+                
+
+            </div>
+            <div class="text">
+                <img src="/logo28.webp" alt="" width="80px" height="80px">
+                <pre>
+                 <p> <span>Technical Learning</span>
+      363K subscriber
+                 </p>
+                </pre>
+                
+               
+                 </div>
+                 <button class="btn">subscrbe</button>
+
         </div>
         
+
     </div>
-</center>
+
+
+
+    
+    
 </body>
 </html>
